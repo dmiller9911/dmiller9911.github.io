@@ -1,0 +1,34 @@
+<div class="resume-projects ">
+    <div class="view-title slideInDown animated">My Projects</div>
+    <div class="mo-project-list flex-row slideInUp animated">
+        <div class="flex-col-xs-12 mo-project flex-row" data-ng-repeat="p in vm.projects track by p.title">
+            <div class="flex-col-xs-12 flex-col-sm-5 mo-project_image">
+                <mo-square-photo url="p.imageUrl"></mo-square-photo>
+            </div>
+            
+            <div class="flex-col-xs-12 flex-col-sm-7 mo-project_details" >
+                <div class="mo-project-title" data-ng-bind="p.title"></div>
+                <div class="mo-project-description" data-ng-bind="p.description"></div>
+                <div class="mo-project-tagline"><b data-ng-bind="p.tagline"></b></div>
+                <div class="mo-project-contributors">
+                    <div class="mo-project-contributors_title">Contributors</div>
+                    <div class="mo-project-contributors_person" data-ng-repeat="c in p.contributors track by c.name">
+                        <b>{{ c.name }}</b>, {{ c.title }}
+                    </div>
+                </div>
+                
+                <div class="mo-project-frameworks">
+                    <div class="mo-project-frameworks_title">Frameworks</div>
+                    <div data-ng-bind="p.frameworks.toString()"></div>
+                </div>
+                
+                <div class="mo-project-site">
+                    <div class="mo-project-site_title">Site</div>
+                    <div>
+                        <a data-ng-href="{{ p.site }}" target="_blank" data-ng-bind="p.site"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

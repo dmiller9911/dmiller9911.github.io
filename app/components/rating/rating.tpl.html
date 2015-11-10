@@ -1,0 +1,7 @@
+<div class="mo-rating">
+    <i class="mdi"  
+       data-ng-click="setRating($index + 1)" 
+       data-ng-repeat="s in stars track by $index" 
+       data-ng-class="{'mdi-star': s, 'mdi-star-outline': !s}">
+    </i>
+</div>

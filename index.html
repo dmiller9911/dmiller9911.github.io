@@ -1,1 +1,50 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="description" content="Portfolio Site for Doug Miller">
+        <meta name="author" content="Doug Miller">
+        <meta name="theme-color" content="#303030">
+        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+        <title>Doug Miller - Javascript Developer</title>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+        
+        <link rel="stylesheet" href="icons/css/materialdesignicons.min.css">
+
+        <!-- Application CSS Concat on deploy    -->
+        <link rel="stylesheet" href="app.min.css">
+        
+        <script src="vendor.min.js"></script>
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body data-ng-app="moResume">
+        <div class="body-background">
+            <div class="body-background_overlay"></div>
+            <div class="body-background_image"></div>
+        </div>
+
+        <mo-header></mo-header>
+        
+        <div class="main-content" data-ui-view=""></div>
+    
+    </body>
+    
+    
+    <script src="app.min.js"></script>
+    
+</html>
