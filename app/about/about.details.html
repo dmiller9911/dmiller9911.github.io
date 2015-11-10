@@ -1,0 +1,6 @@
+<div class="about-user-info_section about-user-info_section--top">
+    <div class="user-name" data-ng-bind="vm.person.firstName + ' ' + vm.person.lastName"></div>
+    <div class="user-tagline" data-ng-bind-html-unsafe="vm.person.tagline">Co-Founder MoseyOut, LLC<br>Javascript Developer</div>
+    <div class="user-email"><a data-ng-href="mailto:{{ vm.person.email }}">{{ vm.person.contact.email }}</a></div>
+    <div class="user-location"><i class="mdi mdi-map-marker"></i> {{ vm.person.location }}</div>
+</div>
