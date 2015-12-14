@@ -1,0 +1,48 @@
+<mo-hero-banner mo-title="Doug Miller" mo-subtitle="Front-end Developer"></mo-hero-banner>
+<div class="section-title">Projects</div>
+<div class="projects">
+    <div class="project project--moseyout">
+        <a href="http://www.moseyout.com" target="_blank">
+            <div class="box">
+                <div class="content">
+                    <div class="project_img"></div>
+                    <div class="project_title">MoseyOut</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="project project--haverstick">
+        <a href="http://www.haverstickgroup.com" target="_blank">
+            <div class="box">
+                <div class="content">
+                    <div class="project_img"> </div>
+                    <div class="project_title">The Haverstick Group</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="project project--seed">
+        <a href="https://github.com/dmiller9911/angular-seed" target="_blank">
+            <div class="box">
+                <div class="content">
+                    <div class="project_img"></div>
+                    <div class="project_title">Angular Seed</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="section-title">Skills</div>
+<div class="container container--skills">
+    <div class="skill-section" data-ng-repeat="section in vm.skills">
+        <div class="skill-section_title">{{ section.title }}</div>
+        <div class="skill-section_skills">
+            <div class="skill" data-ng-class="{'skill--wide': s.wide}" data-ng-repeat="s in section.skills" >
+                <div class="box">
+                    <div class="content" style="background-image:url({{ s.img }})"></div>
+                </div>
+                <div class="skill_title">{{ s.label }}</div>
+            </div>
+        </div>
+    </div>
+</div>

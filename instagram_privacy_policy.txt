@@ -1,5 +1,0 @@
-Instagram app Privacy Policy
-
-The app DougMPersonal will only collect the urls of the 10 most recent uploads to instagram and display them in a slideshow setting on a digital picture frame.
-
-Urls will not be persisted or shared with anyone else ever.

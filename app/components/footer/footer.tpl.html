@@ -1,0 +1,52 @@
+<div class="mo-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="footer-person">
+                    <a href="https://www.linkedin.com/in/douglasallenmiller" target="_blank">
+                        <div class="footer-person_img"></div>
+                    </a>
+                    <div class="footer-person_name">Doug Miller</div>
+                    <div class="footer-person_title">Front-End Developer</div>
+                    <div class="footer-person_title">Co-founder MoseyOut, LLC</div>
+                    <div class="footer-person_location"><i class="fa fa-map-marker"></i> Indianapolis, IN</div>
+                </div>
+            
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="footer-skills" data-ng-repeat="section in skills">
+                    <div class="footer-skills_title">{{ section.title }}</div>
+                    <div class="footer-skills_skill" data-ng-repeat="s in section.skills | orderBy:'-label.length'">{{ s.label }}</div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="footer-contact">
+                    <a href="mailto:doug.miller@moseyout.com">
+                        <div class="contact-item">
+                            <div class="contact-item_label">doug.miller@moseyout.com</div>
+                            <div class="contact-item_icon">
+                                <i class="fa fa-lg fa-envelope"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/douglasallenmiller" target="_blank">
+                        <div class="contact-item">
+                            <div class="contact-item_label">Linkedin</div>
+                            <div class="contact-item_icon">
+                                <i class="fa fa-lg fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/dmiller9911" target="_blank">
+                        <div class="contact-item">
+                            <div class="contact-item_label">Github</div>
+                            <div class="contact-item_icon">
+                                <i class="fa fa-lg fa-github"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
